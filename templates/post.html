@@ -2,11 +2,20 @@
 {% extends 'base.html' %}
 {% block title %} {{ post.title }} - 內容簡介 {% endblock %}
 {% block headmessage %}
-    <h3 style='font-family:微軟正黑體;font-size:18pt'>{{ post.title }}</h3>
-    <a style='font-family:微軟正黑體;' href='/'>回首頁</a>
-{% endblock %}
+    <h3 style='font-family:微軟正黑體;font-size:20pt;font-weight:bold;'>{{ post.title }}</h3>
+    <a style='font-family:微軟正黑體;color:8a817c;' href='/'>回首頁</a>
+{% endblock headmessage %}
 {% block content %} 
-        <p style='font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;'>
-            {{ post.body }}</a>
-        </p>
-{% endblock %}
+    
+    <div class="content">
+        <div class="txt">
+            <a style='font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;'>作者：{{ post.author }}</a>
+            <hr>
+            <a style='font-family:微軟正黑體;font-size:14pt;letter-spacing:2pt;'>{{ post.body }}</a> 
+        </div>
+        <div class="img">
+            {{ post.img | safe }}</a> 
+        </div>
+        
+    </div>
+{% endblock content%}

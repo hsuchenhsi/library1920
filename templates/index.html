@@ -6,8 +6,30 @@
 {% endblock %}
 {% block content %} 
     {% for post in posts %}
-        <p style='font-family:微軟正黑體;font-size:14pt;font-weight:bold;'>
-            <a href='/post/{{post.slug}}'>{{ post.title }}</a>
-        </p>
+    <div class="card">
+        <div class='card-header-2'>
+            <div class='container'>
+                <p style='font-family:微軟正黑體;font-size:14pt;color:black;font-weight:bold;'>
+                    <a href='/post/{{post.slug}}'>{{ post.title }}</a>
+                </p>
+                <p style='font-family:微軟正黑體;font-size:14pt;color:495057;font-weight:bold;'>
+                    {{ post.author }}
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class='card-body-2' style='font-family:微軟正黑體;font-size:12pt;color:495057'>
+            <p>
+                {{ post.body | truncatechars:50 }}
+            </p>
+        </div>
+        <hr>
+        <div class='card-footer-2' style='font-family:微軟正黑體;font-size:10pt;color:495057'>
+            <p>
+                出版日期：{{ post.date }}
+            </p>
+        </div>
+    </div>
+    <br>
     {% endfor %}
 {% endblock %}

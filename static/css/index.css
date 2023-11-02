@@ -1,0 +1,52 @@
+html{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .card{
+      color:rgb(44, 44, 44)
+  }
+  
+  h3{
+      line-height:40px;
+      height:30px;
+  }
+  
+  .container {
+      display: grid;
+      grid-template-columns:1fr 1fr;   
+  }
+  
+  .card-header-2{
+      text-align:center;
+      line-height:50px;
+      height:30px;
+      color:495057;
+  }
+  
+  .card-body-2{
+      line-height:60px;
+      height:55px;
+      text-indent:20px;
+  }
+  
+  .card-footer-2{
+      line-height:5px;
+      height:20px;
+      text-indent:20px;
+  }
+  
+  .card-footer{
+      line-height:15px;
+      height:30px;
+  }
+  
+  .content{
+      display: grid;
+      grid-template-columns:2fr 1fr;
+  }
+  
+  .img{
+      text-align:right;
+  }
