@@ -6,16 +6,21 @@
     <a style='font-family:微軟正黑體;color:8a817c;' href='/'>回首頁</a>
 {% endblock headmessage %}
 {% block content %} 
-    
-    <div class="content">
-        <div class="txt">
-            <a style='font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;'>作者：{{ post.author }}</a>
-            <hr>
-            <a style='font-family:微軟正黑體;font-size:14pt;letter-spacing:2pt;'>{{ post.body }}</a> 
-        </div>
-        <div class="img">
-            {{ post.img | safe }}</a> 
-        </div>
-        
+<div class="content">
+    <div class="txt">
+        <a style='font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;'>作者：{{ post.author }}</a>
+        <hr>
+        <a style='font-family:微軟正黑體;font-size:14pt;letter-spacing:2pt;'>{{ post.body }}</a> 
+        <br>
+        <br>
+        <br>
+        <input type='radio' name='fcolor' value='yes'
+        checked> 館藏中
+        <input type='radio' name='fcolor'
+        value='no'> 外借中<br>
     </div>
+    <div class="img">
+        {{ post.img | safe }}</a> 
+    </div>
+</div>
 {% endblock content%}

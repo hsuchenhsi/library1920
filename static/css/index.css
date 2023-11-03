@@ -2,51 +2,64 @@ html{
     display:flex;
     align-items:center;
     justify-content:center;
-  }
+}
+
+.well{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+h3{
+    line-height:40px;
+    height:30px;
+}
   
-  .card{
-      color:rgb(44, 44, 44)
-  }
+.container {
+    columns:2; 
+    column-rule-style:ridge;
+    column-rule-color: rgb(233, 233, 233); 
+    text-align:center;
+    line-height:40px;
+    height:30px;
+}
+
+.content-2{
+    columns:2;
+}
+
+.card-body-2{
+    text-indent:20px;
+}
   
-  h3{
-      line-height:40px;
-      height:30px;
-  }
+.card-footer-2{
+    line-height:5px;
+    height:20px;
+    text-indent:20px;
+}
   
-  .container {
-      display: grid;
-      grid-template-columns:1fr 1fr;   
-  }
+.card-footer{
+    line-height:15px;
+    height:30px;
+}
   
-  .card-header-2{
-      text-align:center;
-      line-height:50px;
-      height:30px;
-      color:495057;
-  }
+.content{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+}
   
-  .card-body-2{
-      line-height:60px;
-      height:55px;
-      text-indent:20px;
-  }
-  
-  .card-footer-2{
-      line-height:5px;
-      height:20px;
-      text-indent:20px;
-  }
-  
-  .card-footer{
-      line-height:15px;
-      height:30px;
-  }
-  
-  .content{
-      display: grid;
-      grid-template-columns:2fr 1fr;
-  }
-  
-  .img{
-      text-align:right;
-  }
+.img{
+    text-align:right;
+}
+
+a{
+    text-decoration:aqua;
+}
+
+a:link{
+    color:black;
+    text-decoration:none;
+}
+a:visited{
+    color:blue;
+}
