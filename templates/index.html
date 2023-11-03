@@ -8,19 +8,21 @@
     {% for post in posts %}
     <div class="card">
         <div class="content-2">    
-            <div class='card-header-2'>
+            <div class='card-header-2' style='background-color:b3dee2'>
                 <div class='container'>
                     <div class='a'>
-                        <p style='font-family:微軟正黑體;font-size:14pt;color:495057;font-weight:bold;background-color:b3dee2'>
+                        <p style='font-family:微軟正黑體;font-size:14pt;color:495057;font-weight:bold;'>
                             <a href='/post/{{post.slug}}'>{{ post.title }}</a>
                         </p>
                     </div>
                     <p style='font-family:微軟正黑體;font-size:14pt;color:495057;font-weight:bold;'>
                         {{ post.author }}
                     </p>
+                    <hr>
                 </div>
+                
             </div>
-            <hr>
+            
             <div class='card-body-2' style='font-family:微軟正黑體;font-size:12pt;color:495057;'>
                 <p>
                     {{ post.body | truncatechars:25 }}
